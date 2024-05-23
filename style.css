@@ -482,7 +482,12 @@ a:active {
 }
 
 /* FOR IPAD SCRREN */
-@media (min-width: 768px) and (max-width: 1315px) {@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap'); 
+@media (min-width: 768px) and (max-width: 1199px) {@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+    body {
+        padding: 15px 15px;
+        width: 100vw;
+    }
+    
     .hero {
         background-position: center;
         border-bottom: 15px solid #1c74a7f8;
@@ -511,7 +516,7 @@ a:active {
 
     .grid-item {
         padding: 5px;
-        border: 1px dotted #333;
+        border: 1px dotted var(--LINK-HOVER);
         cursor: pointer;
     }
 
@@ -535,6 +540,10 @@ a:active {
         margin-top: 10px;
     }
 
+    .navbar-item {
+        display: bloc;
+    }
+
     .navbar-item li {
         margin-top: 10px;
     }
@@ -550,36 +559,28 @@ a:active {
     /* BODY */
     .content-container {
         display: flex;
-        gap: 50px;
+        gap: 60px;
         margin-top: 10px;
         padding: 10px;
     }
 
     .first-content {
         width: 20%;
-        margin-top: 10px;
+        margin-top: 15px;
     }
 
     .first-content h2 {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
 
     .first-content-links a {
         display: block;
-        margin-top: 10px;
+        margin-top: 15px;
         color: var(--FONT-COLOR);
     }
 
-    .first-content-links a:hover {
-        color: red;
-    }
-
-    .second-content {
-        width: 80%;
-    }
-
     .second-content-img-right {
-        padding: 10px;
+        padding: 15px;
     }
 
     .second-content-img-left {
@@ -587,92 +588,10 @@ a:active {
     }
 
     .current-work-para-list {
-        padding-left: 10px;
-    }
-
-    .contact-img {
-        margin-top: 5px;
-    }
-
-
-
-    /* body {
-        padding: 15px 15px 0;
-        width: 100vw;
-    }
-    
-    /* HERO SECTION */
-    /* .hero {
-        padding: 60px;
-        border-bottom: 15px solid #1c74a7f8;
-    }
-    
-    .hero-content {
-        width: 300px;
-        font-size: 16px;
-    } */
-    
-    /* MAIN */
-    /* .container {
-        display: block;
-    }
-
-    .grid-footer h1 {
-        font-size: 2.5rem;
-        font-weight: 700;
-    }
-    
-    /* FOOTER SECTION */
-    /* .footer {
-        margin-top: 8px;
-    }    
-
-    .navbar-item {
-        display: block;
-    }
-
-    .navbar li:not(:last-child)::after {
-        display: none;
-    } */
-    
-    /* BODY */
-    /* .content-container {
-        gap: 70px;
-        margin-top: 15px;
-        padding: 15px;
-    }
-    
-    .first-content {
-        width: 20%;
-        margin-top: 8px;
-    }
-    
-    .first-content h2 {
-        margin-bottom: 15px;
-    }
-    
-    .first-content-links a {
-        margin-top: 8px;
-    }
-    
-    .second-content {
-        width: 80%;
-    }
-    
-    .second-content-img-right {
-        padding: 15px;
-    }
-    
-    .second-content-img-left {
-        padding: 15px;
-    }
-    
-    .current-work-para-list {
         padding-left: 15px;
     }
-    
+
     .contact-img {
         margin-top: 8px;
-    } */
-    
+    }  
 }
