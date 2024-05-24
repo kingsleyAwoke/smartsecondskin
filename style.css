@@ -121,7 +121,6 @@ h1, h2, h3 {
 
 h2 {
     color: var(--LINK-HOVER);
-    line-height: 0.9;
     font-weight: 700;
 }
 
@@ -147,9 +146,9 @@ a:active {
 .hero {
     position: relative;
     padding: 80px;
-    background-image: url('/asset/images/back_ground.jpg');
+    background-image: url('/asset/images/large_bg.jpg');
     background-repeat: no-repeat;
-    background-position: right top;
+    background-position: bottom;
     background-size: cover;
     color: var(--BODY-BGCOLOR);
     border-bottom: 15px solid #1c74a7f8;
